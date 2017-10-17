@@ -51,6 +51,7 @@ public class Main {
         Random randomChance = new Random();
         double chance = randomChance.nextDouble();
 
+        for (int i = 0; i < 1000; i++){
         if (chance < 0.25)
         {
             double length = nextDouble();
@@ -77,6 +78,7 @@ public class Main {
             double radius = nextDouble();
             Sphere s = new Sphere(radius);
             measures.add(s);
+        }
         }
     /*
         System.out.println("Hello World!");
